@@ -1,13 +1,8 @@
 def fib(n):
-    if n >= 2:
-        res = fib(n-1)+fib(n-2)
-        return res
-    elif n == 1:
-        res = 1
-        return res
+    if n < 2:
+        return n
     else:
-        res = 0
-        return res
+        return fib(n-1)+fib(n-2)
 
 
 print(fib(5))
