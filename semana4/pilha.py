@@ -18,7 +18,11 @@ class Pilha():
 
 
 p = Pilha()
-p.push(4)
-p.push(5)
-p.push(6)
-p.pop()
+num = 13
+while num > 0:
+    resto = num % 2
+    num = num // 2
+    p.push(resto)
+
+while not p.empty():
+    print(p.pop())
